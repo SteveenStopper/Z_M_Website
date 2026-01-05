@@ -329,6 +329,67 @@ footer {
     background: var(--gradient-secondary) !important;
 }
 
+/* Contact Method Cards */
+.contact-method-card {
+    display: block;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(13, 110, 253, 0.3);
+    height: 100%;
+}
+
+.contact-method-card:hover {
+    background: rgba(13, 110, 253, 0.2);
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+    color: white;
+    box-shadow: 0 10px 30px rgba(13, 110, 253, 0.3);
+}
+
+.contact-method-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-color), #00c6ff);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    transition: all 0.3s ease;
+}
+
+.contact-method-card:hover .contact-method-icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 5px 20px rgba(13, 110, 253, 0.5);
+}
+
+.contact-method-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.contact-method-card h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.contact-method-card:hover h5 {
+    color: #00c6ff;
+}
+
+.contact-method-card p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .hero-section {
